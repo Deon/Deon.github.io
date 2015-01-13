@@ -1,5 +1,5 @@
 /* Blue - 400 - #42A5F5
-Amber - A700 - #00BFA5
+Purple - A700 - #00BFA5
 */
 
 h2{
@@ -73,14 +73,14 @@ header h1{
     margin-bottom: 40px;
 }
 
-/* Amber 400 */
+/* Purple 400 */
 header a.btn{
-    background-color: #FFCA28;
+    background-color: #AB47BC;
 }
 
-/* Amber 300 */
+/* Purple 300 */
 header a.btn:hover{
-    background-color: #FFD54F;
+    background-color: #BA68C8;
 }
 
 /* Blue 200 */
@@ -126,13 +126,13 @@ a.waves-effect .btn {
     padding-bottom: 30px;
 }
 
-/* Amber - 200 */
+/* Purple - 200 */
 .my-stuff .card{
-    background-color: #FFE082;
+    background-color: #CE93D8;
 }
 
-/* Amber 300 */
+/* Purple 300 */
 .my-stuff .card a:hover{
-    background-color: #FFD54F;
+    background-color: #BA68C8;
 }
 
