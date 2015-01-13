@@ -73,14 +73,14 @@ header h1{
     margin-bottom: 40px;
 }
 
-/* Amber 500 */
+/* Amber 400 */
 header a.btn{
-    background-color: #FFA726;
+    background-color: #FFCA28;
 }
 
-/* Amber 400 */
+/* Amber 300 */
 header a.btn:hover{
-    background-color: #FFB74D;
+    background-color: #FFD54F;
 }
 
 /* Blue 200 */
@@ -128,11 +128,11 @@ a.waves-effect .btn {
 
 /* Amber - 200 */
 .my-stuff .card{
-    background-color: #FFCC80;
+    background-color: #FFE082;
 }
 
 /* Amber 300 */
 .my-stuff .card a:hover{
-    background-color: #FFB74D;
+    background-color: #FFD54F;
 }
 
