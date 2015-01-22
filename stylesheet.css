@@ -45,9 +45,6 @@ a:hover, a:focus, a:active{
 }
 
 
-.row{
-    padding: 0px 10px 0px 10px;
-}
 
 
 .container-fluid{
@@ -75,12 +72,12 @@ header h1{
 
 /* Purple 400 */
 header a.btn{
-    background-color: #AB47BC;
+    background-color: #66BB6A;
 }
 
 /* Purple 300 */
 header a.btn:hover{
-    background-color: #BA68C8;
+    background-color: #81C784;
 }
 
 /* Blue 200 */
@@ -128,11 +125,11 @@ a.waves-effect .btn {
 
 /* Purple - 200 */
 .my-stuff .card{
-    background-color: #CE93D8;
+    background-color: #A5D6A7;
 }
 
 /* Purple 300 */
 .my-stuff .card a:hover{
-    background-color: #BA68C8;
+    background-color: #81C784;
 }
 
