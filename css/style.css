@@ -21,8 +21,7 @@ a.btn {
 li {
   font-family: Arial, sans-serif;
   font-size: 1.2em;
-  padding-bottom: 2px;
-  list-style-type: circle; }
+  padding-bottom: 2px; }
 
 .card a {
   color: #9a0000; }
@@ -38,9 +37,9 @@ header {
     font-family: Raleway, Arial, sans-serif;
     font-size: 4.5em;
     margin-bottom: 40px; }
-  header a .btn {
+  header .btn {
     background-color: #66BB6A; }
-    header a .btn:hover {
+    header .btn:hover {
       background-color: #81C784; }
 
 /* Blue 200 */
@@ -74,7 +73,7 @@ footer {
   padding-bottom: 30px; }
   .my-stuff .card {
     background-color: #A5D6A7; }
-    .my-stuff .card:hover {
+    .my-stuff .card a:hover {
       background-color: #81C784; }
 
 /*# sourceMappingURL=style.css.map */

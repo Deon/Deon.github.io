@@ -33,7 +33,6 @@ li{
     font-family: Arial, sans-serif;
     font-size: 1.2em;
     padding-bottom: 2px;
-    list-style-type: circle;
 }
 
 .card a{
@@ -55,7 +54,7 @@ header{
         margin-bottom: 40px;
     }
 
-    a .btn{
+    .btn{
         background-color: #66BB6A;
         &:hover{
             background-color: #81C784;
@@ -68,7 +67,7 @@ header{
 .card{
     background-color: #90CAF9;
 
-    a{
+    a {
         margin: 0;
         -webkit-transition: 0.2s ease-out;
         -moz-transition: 0.2s ease-out;
@@ -108,7 +107,7 @@ footer{
 
     .card{
         background-color: #A5D6A7;
-        &:hover{
+        a:hover{
             background-color: #81C784;
         }
     }
