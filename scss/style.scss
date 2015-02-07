@@ -112,15 +112,21 @@ header{
     }
 
     .card-subtitle {
+        display: block;
         font-family: Roboto;
         color: #616161;
         font-size: 1.6em;
         margin: 0;
         padding-bottom: 5px;
     }
+    .card-reveal{
+        width: 100%;
+        background-color: #90CAF9;
+    }
 }
 
-footer{
+footer.page-footer{
+    padding-top: 20px;
     background-color: #42A5F5;
     color: $white;
     text-align: center;
