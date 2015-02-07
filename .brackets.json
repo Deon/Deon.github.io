@@ -8,7 +8,8 @@
                 "sourceComments": false,
                 "outputStyle": "nested"
             },
-            "linting.collapsed": false
+            "linting.collapsed": false,
+            "fonts.fontSize": "16px"
         }
     }
 }

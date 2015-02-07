@@ -1,6 +1,8 @@
 h2 {
-  font-family: Raleway, Arial, sans-serif;
-  font-size: 2.5em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Nevis, Arial, sans-serif;
+  font-size: 4em;
   margin: 0; }
 
 .container-fluid {
@@ -8,25 +10,20 @@ h2 {
 
 p {
   font-family: Arial, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.25em;
   padding-bottom: 5px; }
 
 a:hover, a:focus, a:active {
   text-decoration: none; }
 
 a.btn {
-  font-size: 1.1em;
+  font-size: 1.25em;
   text-align: center; }
 
 li {
   font-family: Arial, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.25em;
   padding-bottom: 2px; }
-
-.card a {
-  color: #9a0000; }
-  .card a:hover {
-    color: #e51200; }
 
 header {
   background-color: #42A5F5;
@@ -34,13 +31,17 @@ header {
   padding-bottom: 50px; }
   header h1 {
     color: #FFFFFF;
-    font-family: Raleway, Arial, sans-serif;
-    font-size: 4.5em;
+    font-family: Nevis, Arial, sans-serif;
+    font-size: 5em;
     margin-bottom: 40px; }
   header .btn {
-    background-color: #66BB6A; }
+    background-color: #66BB6A;
+    color: #FFFFFF; }
+    header .btn:visited, header .btn:focus {
+      color: #FFFFFF; }
     header .btn:hover {
-      background-color: #81C784; }
+      background-color: #81C784;
+      color: #000000; }
 
 /* Blue 200 */
 .card {
@@ -51,15 +52,25 @@ header {
     -moz-transition: 0.2s ease-out;
     -o-transition: 0.2s ease-out;
     -ms-transition: 0.2s ease-out;
-    transition: 0.2s ease-out; }
+    transition: 0.2s ease-out;
+    color: #9a0000; }
+    .card a:visited, .card a:focus {
+      color: #9a0000; }
     .card a:hover {
+      color: #D50000;
       background-color: #64B5F6; }
   .card .card-title {
-    font-size: 2em; }
+    font-family: Roboto;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000; }
   .card .card-subtitle {
-    color: #fff;
+    font-family: Roboto;
+    color: #616161;
     font-size: 1.6em;
-    margin: 0; }
+    margin: 0;
+    padding-bottom: 5px; }
 
 footer {
   background-color: #42A5F5; }
@@ -75,5 +86,9 @@ footer {
     background-color: #A5D6A7; }
     .my-stuff .card a:hover {
       background-color: #81C784; }
+
+@font-face {
+  font-family: Nevis;
+  src: url("../font/nevis.ttf"); }
 
 /*# sourceMappingURL=style.css.map */

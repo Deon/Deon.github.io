@@ -3,10 +3,20 @@ $green300: #81C784;
 $green400: #66BB6A;
 $grey200: #EEEEEE;
 $blue200: #90CAF9;
+$white: #FFFFFF;
+$black: #000000;
 
-h2{
-    font-family: Raleway, Arial, sans-serif;
-    font-size: 2.5em;
+$defaultFontSize: 1.25em;
+
+@mixin padTB($top, $bottom){
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+h2 {
+    @include padTB(20px, 20px);
+    font-family: Nevis, Arial, sans-serif;
+    font-size: 4em;
     margin: 0;
 }
 
@@ -16,7 +26,7 @@ h2{
 
 p {
     font-family: Arial, sans-serif;
-    font-size: 1.2em;
+    font-size: $defaultFontSize;
     padding-bottom: 5px;
 }
 
@@ -25,21 +35,19 @@ a:hover, a:focus, a:active{
 }
 
 a.btn {
-    font-size: 1.1em;
+    font-size: $defaultFontSize;
     text-align: center;
 }
 
 li{
     font-family: Arial, sans-serif;
-    font-size: 1.2em;
+    font-size: $defaultFontSize;
     padding-bottom: 2px;
 }
 
 .card a{
-    color: #9a0000;
-    &:hover{
-        color: #e51200;
-    }
+
+
 }
 
 header{
@@ -49,16 +57,24 @@ header{
 
     h1{
         color: #FFFFFF;
-        font-family: Raleway, Arial, sans-serif;
-        font-size: 4.5em;
+        font-family: Nevis, Arial, sans-serif;
+        font-size: 5em;
         margin-bottom: 40px;
     }
 
     .btn{
         background-color: #66BB6A;
+        color: $white;
+
+        &:visited, &:focus{
+            color: $white;
+        }
+
         &:hover{
             background-color: #81C784;
+            color: $black;
         }
+
     }
 }
 
@@ -74,20 +90,32 @@ header{
         -o-transition: 0.2s ease-out;
         -ms-transition: 0.2s ease-out;
         transition: 0.2s ease-out;
+        color: #9a0000;
+
+        &:visited, &:focus{
+            color: #9a0000;
+        }
 
         &:hover{
+            color: #D50000;
             background-color: #64B5F6;
         }
     }
 
     .card-title {
+        font-family: Roboto;
         font-size: 2em;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000000;
     }
 
     .card-subtitle {
-        color: #fff;
+        font-family: Roboto;
+        color: #616161;
         font-size: 1.6em;
         margin: 0;
+        padding-bottom: 5px;
     }
 }
 
@@ -113,5 +141,9 @@ footer{
     }
 }
 
+@font-face {
+    font-family: Nevis;
+    src: url("../font/nevis.ttf");
+}
 
 
