@@ -14,14 +14,10 @@ $defaultFontSize: 1.25em;
 }
 
 h2 {
-    @include padTB(20px, 20px);
+    padding-bottom: 30px;
     font-family: Nevis, Arial, sans-serif;
     font-size: 4em;
     margin: 0;
-}
-
-.container-fluid{
-    padding: 0;
 }
 
 p {
@@ -34,20 +30,21 @@ a:hover, a:focus, a:active{
     text-decoration: none;
 }
 
-a.btn {
+a.btn-flat, a.btn {
     font-size: $defaultFontSize;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-fluid{
+    padding: 0;
 }
 
 li{
     font-family: Arial, sans-serif;
     font-size: $defaultFontSize;
     padding-bottom: 2px;
-}
-
-.card a{
-
-
 }
 
 header{
@@ -60,6 +57,7 @@ header{
         font-family: Nevis, Arial, sans-serif;
         font-size: 5em;
         margin-bottom: 40px;
+        text-align: center;
     }
 
     .btn{
@@ -76,6 +74,7 @@ header{
         }
 
     }
+
 }
 
 
@@ -83,7 +82,9 @@ header{
 .card{
     background-color: #90CAF9;
 
+
     a {
+        vertical-align: middle;
         margin: 0;
         -webkit-transition: 0.2s ease-out;
         -moz-transition: 0.2s ease-out;
@@ -121,10 +122,44 @@ header{
 
 footer{
     background-color: #42A5F5;
-
+    color: $white;
+    text-align: center;
+    a .footer-copyright{
+        -webkit-transition: 0.15s ease-out;
+        -moz-transition: 0.15s ease-out;
+        -o-transition: 0.15s ease-out;
+        -ms-transition: 0.15s ease-out;
+        transition: 0.15s ease-out;
+        .love{
+            display:block;
+        }
+        .back-to-top{
+            display:none;
+        }
+        &:hover{
+            background-color: rgba(51,51,51,0.2);
+            .love{
+                display:none;
+            }
+            .back-to-top{
+                display:block;
+            }
+        }
+    }
     p {
         margin-bottom: 0;
+        a{
+            color: $white;
+            &:hover{
+                color: $grey200;
+            }
+        }
     }
+
+}
+
+section.container-fluid.projects{
+    margin-top: 40px;
 }
 
 /* Grey - 200 */
@@ -138,6 +173,9 @@ footer{
         a:hover{
             background-color: #81C784;
         }
+        ul{
+            margin: 0;
+        }
     }
 }
 
@@ -145,5 +183,7 @@ footer{
     font-family: Nevis;
     src: url("../font/nevis.ttf");
 }
+
+
 
 
