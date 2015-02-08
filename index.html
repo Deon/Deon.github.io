@@ -105,17 +105,20 @@
             </div>
         </section>
 
-        <section class = "container-fluid projects" id="projects">
-            <h2 class = "text-center projects-header">PROJECTS</h2>
+        <section class = "container-fluid projects">
+            <div class="margin-40"></div>
+            <h2 class = "text-center projects-header" id="projects">PROJECTS</h2>
             <div class = "row">
                 <div class = "col-md-5 col-md-offset-1">
                     <div class = "card">
                         <div class = "card-image">
                             <img class = "materialboxed" src = "images/campuswall.png">
                         </div>
-                        <div class = "card-content">
+                        <div class = "card-header">
                             <span class = "card-title">CampusWall</span>
                             <h4 class = "card-subtitle">MongoDB, Express, AngularJS, Node.js</h4>
+                        </div>
+                        <div class = "card-content">
                             <p>CampusWall is an event hub that is being built for University of Waterloo students.
                                 Anyone can see and post events to the site to discover activites, societies, and sporting events!
                                 CampusWall is also hooked into the UW API to query for UW and CECA events, as well as the FEDS and EngSoc calendars.
@@ -127,27 +130,30 @@
                     </div>
                     <div class = "card">
                         <div class = "card-image">
-                            <img class = "materialboxed" src = "images/linalg.png">
+                            <img class = "materialboxed" src = "images/molarfast.png">
+                        </div>
+                        <div class = "card-header">
+                            <span class = "card-title">MolarFast</span>
+                            <h4 class = "card-subtitle">AngularJS, Flask</h4>
                         </div>
                         <div class = "card-content">
-                            <span class = "card-title">LinAlg Toolkit</span>
-                            <h4 class = "card-subtitle">AngularJS, Flask</h4>
-                            <p>The LinAlg Toolkit reduces matrices and provides their properties. It also does complex number operations as well as conversion between polar and rectangular form.</p>
-                            <p>I used SymPy for the matrix reduction, alongside MathJax to render the LaTeX.</p>
+                            <p>MolarFast is a webapp that allows users to enter chemical formulas, and it will return the molar mass of that compound.</p>
+                            <p>It also has a temperature converter, with constants and conversion ratios as a quick reference.</p>
                         </div>
                         <div class = "card-action">
-                            <a href = "http://linalg.herokuapp.com" class="waves-effect waves-light btn-flat"><span class = "fa fa-globe"></span> In Action!</a>
-                            <a href = "http://github.com/DeonHua/LinAlg"  class="waves-effect waves-light btn-flat"><span class = "fa fa-lg fa-github"></span> GitHub</a>
-
+                            <a href = "http://molarfast.herokuapp.com/" class = "waves-effect waves-light btn-flat"><span class = "fa fa-globe"></span> In Action!</a>
+                            <a href = "http://github.com/DeonHua/MolarFast" class = "waves-effect waves-light btn-flat"><span class = "fa fa-lg fa-github"></span> GitHub</a>
                         </div>
                     </div>
                     <div class = "card">
                         <div class = "card-image">
                             <img class = "materialboxed" src = "images/watissubletting.png">
                         </div>
-                        <div class = "card-content">
+                        <div class = "card-header">
                             <span class = "card-title">WatIsSubletting</span>
                             <h4 class = "card-subtitle">AngularJS, Flask</h4>
+                        </div>
+                        <div class = "card-content">
                             <p>UW students can enter their program, stream, and current term, and a friend's information into WatIsSubletting.
                                 This web-app tells them what terms they can sublet for!</p>
                         </div>
@@ -162,9 +168,11 @@
                         <div class = "card-image">
                             <img class = "materialboxed" src = "images/splitter.png">
                         </div>
-                        <div class = "card-content">
+                        <div class ="card-header">
                             <span class = "card-title">Splitter</span>
                             <span class = "card-subtitle">AngularJS</span>
+                        </div>
+                        <div class = "card-content">
                             <p>Trying to figure out how to split the cost of a receipt or bill? Sounds easy enough.</p>
                             <p>What if the cost isn't being split evenly? That's another story. That's why there's Splitter.</p>
                             <p>Splitter is a webapp that allows you to split the cost unevenly between a group of people.</p>
@@ -176,26 +184,35 @@
                     </div>
                     <div class = "card">
                         <div class = "card-image">
-                            <img class = "materialboxed" src = "images/molarfast.png">
+                            <img class = "materialboxed" src = "images/linalg.png">
+                        </div>
+                        <div class = "card-header">
+                            <span class = "card-title">LinAlg Toolkit</span>
+                            <h4 class = "card-subtitle">AngularJS, Flask</h4>
                         </div>
                         <div class = "card-content">
-                            <span class = "card-title">MolarFast</span>
-                            <h4 class = "card-subtitle">AngularJS, Flask</h4>
-                            <p>MolarFast is a webapp that allows users to enter chemical formulas, and it will return the molar mass of that compound.</p>
-                            <p>It also has a temperature converter, with constants and conversion ratios as a quick reference.</p>
+
+                            <p>The LinAlg Toolkit reduces matrices and provides their properties.
+                                It also does complex number operations as well as conversion between polar and rectangular form.</p>
+                            <p>I used SymPy for the matrix reduction, alongside MathJax to render the LaTeX.</p>
                         </div>
                         <div class = "card-action">
-                            <a href = "http://molarfast.herokuapp.com/" class = "waves-effect waves-light btn-flat"><span class = "fa fa-globe"></span> In Action!</a>
-                            <a href = "http://github.com/DeonHua/MolarFast" class = "waves-effect waves-light btn-flat"><span class = "fa fa-lg fa-github"></span> GitHub</a>
+                            <a href = "http://linalg.herokuapp.com" class="waves-effect waves-light btn-flat"><span class = "fa fa-globe"></span> In Action!</a>
+                            <a href = "http://github.com/DeonHua/LinAlg"  class="waves-effect waves-light btn-flat"><span class = "fa fa-lg fa-github"></span> GitHub</a>
+
                         </div>
                     </div>
+
                     <div class = "card">
                         <div class = "card-image">
                             <img class = "materialboxed" src = "images/asteroids.png">
                         </div>
-                        <div class = "card-content">
+                        <div class = "card-header">
                             <span class = "card-title">pyAsteroids</span>
                             <h4 class = "card-subtitle">Python</h4>
+                        </div>
+                        <div class = "card-content">
+
                             <p>pyAsteroids is the recreation of the original arcade game Asteroids in Python, using the pyGame library.</p>
                         </div>
                         <div class = "card-action">

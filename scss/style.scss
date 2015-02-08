@@ -1,8 +1,12 @@
 $green200: #A5D6A7;
 $green300: #81C784;
 $green400: #66BB6A;
+$grey50: #FAFAFA;
 $grey200: #EEEEEE;
+$blue50: #E3F2FD;
 $blue200: #90CAF9;
+$blue300: #64B5F6;
+$blue400: #42A5F5;
 $white: #FFFFFF;
 $black: #000000;
 
@@ -14,10 +18,11 @@ $defaultFontSize: 1.25em;
 }
 
 h2 {
+    margin: 0;
     padding-bottom: 30px;
     font-family: Nevis, Arial, sans-serif;
     font-size: 4em;
-    margin: 0;
+
 }
 
 p {
@@ -81,7 +86,7 @@ header{
 /* Blue 200 */
 .card{
     background-color: #90CAF9;
-
+    margin-bottom: 20px;
 
     a {
         vertical-align: middle;
@@ -102,6 +107,12 @@ header{
             background-color: #64B5F6;
         }
     }
+    .card-header{
+        background-color: $blue400;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
 
     .card-title {
         font-family: Roboto;
@@ -114,18 +125,21 @@ header{
     .card-subtitle {
         display: block;
         font-family: Roboto;
-        color: #616161;
+        color: #424242;
         font-size: 1.6em;
         margin: 0;
-        padding-bottom: 5px;
     }
-    .card-reveal{
-        width: 100%;
-        background-color: #90CAF9;
+    .card-content{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .card-action{
+        padding-top: 10px;
     }
 }
 
 footer.page-footer{
+    margin:0;
     padding-top: 20px;
     background-color: #42A5F5;
     color: $white;
@@ -165,12 +179,15 @@ footer.page-footer{
 }
 
 section.container-fluid.projects{
-    margin-top: 40px;
+    background-color: $grey50;
+    .margin-40{
+        margin-top:40px;
+    }
 }
 
-/* Grey - 200 */
+
 .my-stuff{
-    background-color: #EEEEEE;
+    background-color: $blue50;
     padding-top: 30px;
     padding-bottom: 30px;
 
@@ -184,6 +201,7 @@ section.container-fluid.projects{
         }
     }
 }
+
 
 @font-face {
     font-family: Nevis;
