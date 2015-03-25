@@ -1,19 +1,21 @@
 h2 {
+  font-family: 'Arimo', Arial, sans-serif;
+  font-weight: 700;
   margin: 0;
   padding-bottom: 30px;
-  font-family: Nevis, Arial, sans-serif;
   font-size: 4em; }
 
 p {
-  font-family: Arial, sans-serif;
-  font-size: 1.25em;
+  font-family: 'Arimo', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
   padding-bottom: 5px; }
 
 a:hover, a:focus, a:active {
   text-decoration: none; }
 
 a.btn-flat, a.btn {
-  font-size: 1.25em;
+  font-size: 1.3rem;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px; }
@@ -22,41 +24,57 @@ a.btn-flat, a.btn {
   padding: 0; }
 
 li {
-  font-family: Arial, sans-serif;
-  font-size: 1.25em;
+  font-family: 'Arimo', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
   padding-bottom: 2px; }
 
 header {
-  background-color: #42A5F5;
-  padding-top: 10px;
-  padding-bottom: 50px; }
+  text-align: center;
+  background-image: url(../images/bulb.png);
+  background-size: cover;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  height: 40vh;
+  min-height: 315px; }
+  @media (max-width: 700px) {
+    header {
+      height: 50vh; } }
   header h1 {
-    color: #FFFFFF;
-    font-family: Nevis, Arial, sans-serif;
-    font-size: 5em;
-    margin-bottom: 40px;
-    text-align: center; }
+    font-family: 'Arimo', Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 5rem;
+    margin-top: 0; }
+  header h2 {
+    font-family: 'Arimo', Arial, sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 3rem; }
   header .btn {
-    background-color: #66BB6A;
+    font-family: 'Arimo', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    background-color: #000000;
     color: #FFFFFF; }
     header .btn:visited, header .btn:focus {
       color: #FFFFFF; }
     header .btn:hover {
-      background-color: #81C784;
+      background-color: #FFFFFF;
       color: #000000; }
 
-/* Blue 200 */
 .card {
   background-color: #90CAF9;
   margin-bottom: 20px; }
   .card a {
     vertical-align: middle;
     margin: 0;
-    -webkit-transition: 0.2s ease-out;
-    -moz-transition: 0.2s ease-out;
-    -o-transition: 0.2s ease-out;
-    -ms-transition: 0.2s ease-out;
-    transition: 0.2s ease-out;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    -ms-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
     color: #9a0000; }
     .card a:visited, .card a:focus {
       color: #9a0000; }
@@ -69,14 +87,16 @@ header {
     padding-left: 20px;
     padding-bottom: 10px; }
   .card .card-title {
-    font-family: Roboto;
+    font-family: 'Arimo', Arial, sans-serif;
+    font-weight: 700;
     font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
     color: #000000; }
   .card .card-subtitle {
+    font-family: 'Arimo', Arial, sans-serif;
+    font-weight: 400;
     display: block;
-    font-family: Roboto;
     color: #424242;
     font-size: 1.6em;
     margin: 0; }
@@ -86,6 +106,28 @@ header {
   .card .card-action {
     padding-top: 10px; }
 
+section.my-stuff {
+  background-color: #E3F2FD;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  section.my-stuff .card {
+    background-color: #F5F5F5;
+    color: #000000;
+    font-family: 'Arimo', Arial, sans-serif;
+    font-weight: 400; }
+    section.my-stuff .card a {
+      font-family: 'Arimo', Arial, sans-serif;
+      font-weight: 400; }
+      section.my-stuff .card a:hover {
+        background-color: #EEEEEE; }
+    section.my-stuff .card ul {
+      margin: 0; }
+
+section.container-fluid.projects {
+  background-color: #F5F5F5; }
+  section.container-fluid.projects .margin-40 {
+    margin-top: 40px; }
+
 footer.page-footer {
   margin: 0;
   padding-top: 20px;
@@ -93,11 +135,11 @@ footer.page-footer {
   color: #FFFFFF;
   text-align: center; }
   footer.page-footer a .footer-copyright {
-    -webkit-transition: 0.15s ease-out;
-    -moz-transition: 0.15s ease-out;
-    -o-transition: 0.15s ease-out;
-    -ms-transition: 0.15s ease-out;
-    transition: 0.15s ease-out; }
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    -ms-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out; }
     footer.page-footer a .footer-copyright .love {
       display: block; }
     footer.page-footer a .footer-copyright .back-to-top {
@@ -114,25 +156,5 @@ footer.page-footer {
       color: #FFFFFF; }
       footer.page-footer p a:hover {
         color: #EEEEEE; }
-
-section.container-fluid.projects {
-  background-color: #FAFAFA; }
-  section.container-fluid.projects .margin-40 {
-    margin-top: 40px; }
-
-.my-stuff {
-  background-color: #E3F2FD;
-  padding-top: 30px;
-  padding-bottom: 30px; }
-  .my-stuff .card {
-    background-color: #A5D6A7; }
-    .my-stuff .card a:hover {
-      background-color: #81C784; }
-    .my-stuff .card ul {
-      margin: 0; }
-
-@font-face {
-  font-family: Nevis;
-  src: url("../font/nevis.ttf"); }
 
 /*# sourceMappingURL=style.css.map */

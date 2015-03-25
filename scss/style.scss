@@ -1,8 +1,30 @@
-$green200: #A5D6A7;
-$green300: #81C784;
-$green400: #66BB6A;
+@mixin padTB($top, $bottom){
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin Arimo(){
+    font-family: 'Arimo', Arial, sans-serif;
+    font-weight: 400;
+}
+
+@mixin ArimoBold(){
+    font-family: 'Arimo', Arial, sans-serif;
+    font-weight: 700;
+}
+
+@mixin transition($property, $time, $easing){
+    -webkit-transition: $property $time $easing;
+    -moz-transition: $property $time $easing;
+    -o-transition: $property $time $easing;
+    -ms-transition: $property $time $easing;
+    transition: $property $time $easing;
+}
+
 $grey50: #FAFAFA;
+$grey100: #F5F5F5;
 $grey200: #EEEEEE;
+$grey700: #616161;
 $blue50: #E3F2FD;
 $blue200: #90CAF9;
 $blue300: #64B5F6;
@@ -10,23 +32,28 @@ $blue400: #42A5F5;
 $white: #FFFFFF;
 $black: #000000;
 
-$defaultFontSize: 1.25em;
+$link: #9a0000;
+$linkHover: #D50000;
+$personalBackground: $blue50;
+$personalCardBackground: $grey100;
+$personalCardBackgroundHover: $grey200;
+$projectBackground: $grey100;
+$projectCardBackground: $blue200;
+$projectCardBackgroundHover: $blue300;
 
-@mixin padTB($top, $bottom){
-    padding-top: $top;
-    padding-bottom: $bottom;
-}
+$defaultFontSize: 1.3rem;
+
+
 
 h2 {
+    @include ArimoBold;
     margin: 0;
     padding-bottom: 30px;
-    font-family: Nevis, Arial, sans-serif;
     font-size: 4em;
-
 }
 
 p {
-    font-family: Arial, sans-serif;
+    @include Arimo;
     font-size: $defaultFontSize;
     padding-bottom: 5px;
 }
@@ -47,26 +74,40 @@ a.btn-flat, a.btn {
 }
 
 li{
-    font-family: Arial, sans-serif;
+    @include Arimo;
     font-size: $defaultFontSize;
     padding-bottom: 2px;
 }
 
 header{
-    background-color:#42A5F5;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    text-align: center;
+    background-image: url(../images/bulb.png);
+    background-size: cover;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    height: 40vh;
+    min-height: 315px;
 
+    @media(max-width: 700px){
+        height: 50vh;
+    }
     h1{
-        color: #FFFFFF;
-        font-family: Nevis, Arial, sans-serif;
-        font-size: 5em;
-        margin-bottom: 40px;
-        text-align: center;
+        @include ArimoBold;
+        text-transform: uppercase;
+        color: $black;
+        font-size: 5rem;
+        margin-top: 0;
+    }
+    h2{
+        @include Arimo;
+        color: $black;
+        font-size: 3rem;
     }
 
     .btn{
-        background-color: #66BB6A;
+        @include Arimo;
+        font-size: 1.25rem;
+        background-color: $black;
         color: $white;
 
         &:visited, &:focus{
@@ -74,16 +115,13 @@ header{
         }
 
         &:hover{
-            background-color: #81C784;
+            background-color: $white;
             color: $black;
         }
-
     }
 
 }
 
-
-/* Blue 200 */
 .card{
     background-color: #90CAF9;
     margin-bottom: 20px;
@@ -91,20 +129,16 @@ header{
     a {
         vertical-align: middle;
         margin: 0;
-        -webkit-transition: 0.2s ease-out;
-        -moz-transition: 0.2s ease-out;
-        -o-transition: 0.2s ease-out;
-        -ms-transition: 0.2s ease-out;
-        transition: 0.2s ease-out;
-        color: #9a0000;
+        @include transition(all, 0.15s, ease-out);
+        color: $link;
 
         &:visited, &:focus{
-            color: #9a0000;
+            color: $link;
         }
 
         &:hover{
-            color: #D50000;
-            background-color: #64B5F6;
+            color: $linkHover;
+            background-color: $projectCardBackgroundHover;
         }
     }
     .card-header{
@@ -115,7 +149,7 @@ header{
     }
 
     .card-title {
-        font-family: Roboto;
+        @include ArimoBold;
         font-size: 2em;
         font-weight: bold;
         text-transform: uppercase;
@@ -123,8 +157,8 @@ header{
     }
 
     .card-subtitle {
+        @include Arimo;
         display: block;
-        font-family: Roboto;
         color: #424242;
         font-size: 1.6em;
         margin: 0;
@@ -138,6 +172,35 @@ header{
     }
 }
 
+
+section.my-stuff{
+    background-color: $personalBackground;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .card{
+        background-color: $personalCardBackground;
+        color: $black;
+        @include Arimo;
+        a{
+            @include Arimo;
+            &:hover{background-color: $personalCardBackgroundHover;}
+        }
+
+        ul{
+            margin: 0;
+        }
+    }
+}
+
+
+section.container-fluid.projects{
+    background-color: $projectBackground;
+    .margin-40{
+        margin-top: 40px;
+    }
+}
+
 footer.page-footer{
     margin:0;
     padding-top: 20px;
@@ -145,11 +208,7 @@ footer.page-footer{
     color: $white;
     text-align: center;
     a .footer-copyright{
-        -webkit-transition: 0.15s ease-out;
-        -moz-transition: 0.15s ease-out;
-        -o-transition: 0.15s ease-out;
-        -ms-transition: 0.15s ease-out;
-        transition: 0.15s ease-out;
+        @include transition(all, 0.15s, ease-out);
         .love{
             display:block;
         }
@@ -177,37 +236,6 @@ footer.page-footer{
     }
 
 }
-
-section.container-fluid.projects{
-    background-color: $grey50;
-    .margin-40{
-        margin-top:40px;
-    }
-}
-
-
-.my-stuff{
-    background-color: $blue50;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    .card{
-        background-color: #A5D6A7;
-        a:hover{
-            background-color: #81C784;
-        }
-        ul{
-            margin: 0;
-        }
-    }
-}
-
-
-@font-face {
-    font-family: Nevis;
-    src: url("../font/nevis.ttf");
-}
-
 
 
 

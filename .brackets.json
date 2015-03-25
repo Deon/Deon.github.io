@@ -9,7 +9,8 @@
                 "outputStyle": "nested"
             },
             "linting.collapsed": false,
-            "fonts.fontSize": "16px"
+            "fonts.fontSize": "16px",
+            "brackets-git.gitPath": "git"
         }
     }
 }
