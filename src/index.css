@@ -1,0 +1,130 @@
+
+$open-sans: 'Open Sans', sans-serif; 
+$black: black;
+$grey: #868883;
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: $open-sans;
+  color: #2B303A;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: $open-sans;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0;
+  .header{
+    &__name {
+      font-size: 36px;
+      line-height: 60px;
+      font-family: $open-sans;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 48px;
+      font-family: $open-sans;
+    }
+  }
+  .external {
+    padding-left: 0;
+  }
+}
+
+
+.external__link_wrapper {
+  display: inline-block;
+  margin-top: 20px;
+  .external__link {
+    color: black; /* Make this grey */
+    font-family: $open-sans;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 10px;
+    border-bottom: 1px dashed black; 
+    &:hover{
+      color: $grey;
+      border-bottom: 1px dashed $grey;
+    }
+  }
+}
+
+.intro {
+  display: inline-block;
+  &__content, &__languages{
+    width: 470px;
+    display: inline-block;
+  }
+  &__content{
+    margin-right: 25px;
+  }
+  &__languages{
+    margin-left: 25px;
+    ul {
+      display: inline-block;
+    }
+  }
+}
+
+.work{
+  &__placement{
+    margin: 20px 0;
+  }
+  .placement{
+
+  }
+}
+
+.initiative {
+   margin: 20px 0;
+
+}
+
+.projects{
+  /* List Styles */
+
+}
+
+
+.project{
+  margin: 20px 0;
+  &__title{
+    font-size: 24px;
+    margin: 8px 0;
+  }
+
+  &__time{
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  &__languages{
+    font-size: 18px;
+    margin: 8px 0;
+  }
+  &__description{
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  &__links{
+
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    margin: 0 40px;
+  }
+
+  .intro {
+    &__content, &__languages{
+      width: 100%;
+      display: block;
+      margin: 40px 0;
+    }
+  }
+}
