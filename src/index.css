@@ -15,6 +15,14 @@ h1 {
   font-family: $open-sans;
 }
 
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
 header {
   text-align: center;
   margin: 20px 0;
@@ -76,7 +84,14 @@ header {
     margin: 20px 0;
   }
   .placement{
-
+    &__time{
+      font-size: 18px;
+      margin: 4px 0;
+    } 
+    &__title{
+      font-size: 16px;
+      margin: 4px 0;
+    }
   }
 }
 
