@@ -41,9 +41,19 @@ header {
   }
   .external {
     padding-left: 0;
+    margin: 0;
   }
 }
 
+a {
+  color: $black;
+  text-decoration: none;
+  border-bottom: 1px dashed black; 
+  &:hover{
+    color: $grey;
+    border-bottom: 1px dashed $grey;
+  }
+}
 
 .external__link_wrapper {
   display: inline-block;
@@ -62,8 +72,28 @@ header {
   }
 }
 
+
+.placement, .hackathon, .project {
+  margin: 30px 0;
+  &:nth-child(2){
+    margin-top: 0;
+    h2 {
+      margin-top: 0;
+    }
+  }
+  h2 {
+    margin: 20px 0;
+  }
+  div {
+    margin-left: 10px;
+  }
+}
+
 .intro {
   display: inline-block;
+  a {
+    font-weight: bold;
+  }
   &__content, &__languages{
     width: 470px;
     display: inline-block;
@@ -79,43 +109,35 @@ header {
   }
 }
 
-.work{
-  &__placement{
+.placement{
+  &__company{
+    display: inline-block;
+  }
+  &__time{
+    font-size: 18px;
+    display: inline-block;
+    float: right;
     margin: 20px 0;
-  }
-  .placement{
-    &__time{
-      font-size: 18px;
-      margin: 4px 0;
-    } 
-    &__title{
-      font-size: 16px;
-      margin: 4px 0;
-    }
+  } 
+  &__title{
+    font-size: 18px;
   }
 }
 
-.initiative {
-   margin: 20px 0;
-
-}
-
-.projects{
-  /* List Styles */
-
-}
 
 
 .project{
-  margin: 20px 0;
   &__title{
     font-size: 24px;
     margin: 8px 0;
+    display: inline-block;
   }
 
   &__time{
     font-size: 18px;
-    margin: 8px 0;
+    margin: 20px 0;
+    display: inline-block;
+    float: right;
   }
   &__languages{
     font-size: 18px;
@@ -132,7 +154,7 @@ header {
 
 @media (max-width: 1000px) {
   body {
-    margin: 0 40px;
+    margin: 0 20px;
   }
 
   .intro {
@@ -140,6 +162,19 @@ header {
       width: 100%;
       display: block;
       margin: 40px 0;
+    }
+    &__languages{
+      margin-bottom: 0px;
+    }
+  }
+  .placement, .hackathon, .project {
+    &__time{
+      display: block;
+      float: none;
+      margin: 0;
+    }
+    div {
+      margin-left: 0;
     }
   }
 }
