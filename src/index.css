@@ -8,6 +8,7 @@ body {
   margin: 0 auto;
   font-family: $open-sans;
   color: #2B303A;
+  background-color: #FBFBFB;
 }
 
 h1 {
