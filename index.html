@@ -12,7 +12,7 @@
 
   <ul class='external'>
       <li class='external__link_wrapper'>
-      <a class='external__link' href='mailto:deon.hua@uwaterloo.ca'>Email</a>
+      <a class='external__link' href='mailto:me@deonhua.com'>Email</a>
     </li>
     <li class='external__link_wrapper'>
       <a class='external__link' href='https://github.com/Deon'>Github</a>
@@ -27,7 +27,7 @@
       <a class='external__link' href='https://500px.com/DeonHua'>500px</a>
     </li>
     <li class='external__link_wrapper'>
-      <a class='external__link' href='https://twitter.com/HuaDeon'>Twitter</a>
+      <a class='external__link' href='https://instagram.com/deonhua'>Instagram</a>
     </li>
   </ul>
 </header>
@@ -35,7 +35,9 @@
 <div class='intro'>
   <div class='intro__content'>
     <p>Hi! I'm Deon, a software developer and computer science student at the University of Waterloo.</p>
-    <p>I'm currently interning at Yahoo as a backend developer, mainly working with NodeJS and chat-bots. In the past, I've interned at <a href='http://500px.com'>500px</a> as a full stack web developer, and at <a href='http://www.textnow.com'>TextNow</a>, as a front-end web developer.</p>
+    <p>I'm currently studying abroad at Yonsei University in South Korea.
+      In the past, I've interned at <a href='https://bloomberg.com'>Bloomberg</a>, <a href='https://yahoo.com'>Yahoo</a>,
+       <a href='https://500px.com'>500px</a>, and <a href='https://www.textnow.com'>TextNow</a>.</p>
     <p>On the side, I really enjoy photography, rock climbing, and playing board games!</p>
   </div>
   <div class='intro__languages'>
@@ -46,19 +48,19 @@
       <li>JavaScript</li>
       <li>Ruby</li>
       <li>Python</li>
-      <li>C/C++</li> 
-      <li>Backbone.js</li>
-      <li>Marionette.js</li>
-      <li>AngularJS</li>
+      <li>C++</li>
+      <li>SQL</li>
+      <li>Docker</li>
+      <li>HashiCorp Nomad</li>
     </ul>
     <ul>
       <li>NodeJS</li>
       <li>Express</li>
       <li>Ruby on Rails</li>
       <li>Flask</li>
-      <li>HTML/CSS</li>
-      <li>Sass</li>
-      <li>jQuery</li>
+      <li>Tornado</li>
+      <li>Kerberos</li>
+      <li>Jenkins</li>
     </ul>
   </div>
 </div>
@@ -67,7 +69,42 @@
   <h1>Work Experience</h1>
   <div class='placement'>
     <h2 class='placement__company'>
-      <a href='http://500px.com'>500px</a>
+      <a href='https://bloomberg.com'>Bloomberg</a>
+    </h2>
+    <div class='placement__time'>May - August 2017</div>
+    <div class='placement__title'>Software Developer, Systems Infrastructure</div>
+    <div class='placement__description'>
+      <p>I worked on containerizing services used at Bloomberg, and making them easy to use for product teams.</p>
+      <ul>
+        <li>Pipeline to build Docker containers from Debian packages when a new version is published</li>
+        <li>Built an API with Tornado to provide container metadata, and to run containers on the cloud</li>
+        <li>Integrated Kerberos into the API for authentication, allowing user-based resource (ie. CPU/Memory) quotas</li>
+        <li>Used Nomad to schedule containers onto a farm of machines</li>
+        <li>Wrote Python and C++ Clients for users to easily use the containers framework</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class='placement'>
+    <h2 class='placement__company'>
+      <a href='https://yahoo.com'>Yahoo</a>
+    </h2>
+    <div class='placement__time'>September - December 2016</div>
+    <div class='placement__title'>Back-end Developer</div>
+    <div class='placement__description'>
+      <p>I worked mostly on chat-bots at Yahoo, specifically on routing (between bots and chat platforms).</p>
+      <ul>
+        <li>Implemented DB caching using Memcached to improve read performance</li>
+        <li>Created a football minigame with Phaser.js for the Yahoo Bots app</li>
+        <li>Build phone number verification using Twilio SMS APIs</li>
+        <li>Integrated Twilio Programmable Chat to allow users to chat with our bots from the web</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class='placement'>
+    <h2 class='placement__company'>
+      <a href='https://500px.com'>500px</a>
     </h2>
     <div class='placement__time'>January - April 2016</div>
     <div class='placement__title'>Full Stack Web Developer</div>
@@ -81,9 +118,10 @@
       </ul>
     </div>
   </div>
+
   <div class='placement'>
     <h2 class='placement__company'>
-        <a href='http://textnow.com'>TextNow (formerly Enflick)</a>
+        <a href='https://textnow.com'>TextNow (formerly Enflick)</a>
     </h2>
     <div class='placement__time'>May - December 2015</div>
     <div class='placement__title'>Front-End Web Developer</div>
@@ -100,22 +138,20 @@
 </div>
 
 <div class='hackathons'>
-  <h1>Hackathons I Organize</h1>
+  <h1>Hackathons I've Organized</h1>
   <div class='hackathon'>
     <h2 class='hackathon__title'>
-    <a href='http://techretreat.ca'>Tech Retreat</a>
+    <a href='http://terriblehack.website/'>TerribleHack</a>
     </h2>
+    <div class='hackathon__description'>
+      <p>TerribleHack is a comedy-centric hackathon held termly at the University of Waterloo, focused on making relatively unconventional, but funny hacks! We're now heading into our 8th iteration.</p>
+    </div>
+  </div>
+  <div class='hackathon'>
+    <h2 class='hackathon__title'>Tech Retreat</h2>
     <div class='hackathon__description'>
       <p>Tech Retreat is a hackathon and learnathon for high school students to learn, collaborate, and create.</p>
-      <p>On August 15, 2015, we hosted over 150 high school students at the University of Waterloo. This year, we'll bring 300 students back for two days of exploration! </p>
-    </div>
-  </div>  
-  <div class='hackathon'>
-    <h2 class='hackathon__title'>
-    <a href='http://terriblehack.com/'>TerribleHack</a>
-    </h2>
-    <div class='hackathon__description'>
-      <p>TerribleHack is a comedy-centric hackathon held termly at the University of Waterloo, focused on making relatively unconventional, but funny hacks! We're now heading into our 4th iteration.</p>
+      <p>On August 15, 2015, we hosted over 150 high school students at the University of Waterloo.</p>
     </div>
   </div>
 </div>
@@ -129,14 +165,6 @@
     <div class='project__description'>A Lita Adapter for the board game Resistance, which allows users to start a Resistance game in their favourite chat client (Slack, IRC, etc.)</div>
     <div class='project__links'>
       <a href='https://github.com/DeonHua/lita-resistance'>Github Source</a>
-    </div>
-  </div>
-  <div class='project'>
-    <h2 class='project__title'>Barbershop Bookings</h2>
-    <div class='project__time'>May - September 2015</div>
-    <div class='project__languages'>AngularJS, Parse</div>
-    <div class='project__description'>
-      As part of a team, I built the admin panel and backend of a booking system for a barbershop.
     </div>
   </div>
   <div class='project'>
