@@ -35,8 +35,7 @@
 <div class='intro'>
   <div class='intro__content'>
     <p>Hi! I'm Deon, a software developer and computer science student at the University of Waterloo.</p>
-    <p>I'm currently interning at <a href='https://bloomberg.com'>Bloomberg</a>.
-      In the past, I've interned at <a href='https://yahoo.com'>Yahoo</a>,
+    <p>In the past, I've interned at <a href='https://yahoo.com'>Yahoo</a>,
        <a href='https://500px.com'>500px</a>, and <a href='https://www.textnow.com'>TextNow</a>.</p>
     <p>On the side, I really enjoy photography, rock climbing, and playing board games!</p>
   </div>
@@ -51,7 +50,8 @@
       <li>C++</li>
       <li>SQL</li>
       <li>Docker</li>
-      <li>HashiCorp Nomad</li>
+      <li>Nomad</li>
+      <li>Consul</li>
     </ul>
     <ul>
       <li>NodeJS</li>
@@ -61,12 +61,31 @@
       <li>Tornado</li>
       <li>Kerberos</li>
       <li>Jenkins</li>
+      <li>OpenStack</li>
     </ul>
   </div>
 </div>
 
 <div class='placements'>
   <h1>Work Experience</h1>
+  
+  <div class='placement'>
+    <h2 class='placement__company'>
+      <a href='https://bloomberg.com'>Bloomberg</a>
+    </h2>
+    <div class='placement__time'>January - April 2018</div>
+    <div class='placement__title'>Software Developer, Systems Infrastructure</div>
+    <div class='placement__description'>
+      <p>I worked on Consul-based service discovery, building out infrastructure and APIs for developers to register and find services.</p>
+      <ul>
+        <li>Designed architecture and APIs for universally-reachable HTTP-based service discovery</li>
+        <li>Developed APIs to register Services (e.g. Redis) with service discovery</li>
+        <li>Added support for service discovery without a local daemon, resulting in less maintenance</li>
+        <li>Wrote Terraform and Bash scripts to consistently produce correctly configured infrastructure</li>
+      </ul>
+    </div>
+  </div>
+  
   <div class='placement'>
     <h2 class='placement__company'>
       <a href='https://bloomberg.com'>Bloomberg</a>
@@ -76,11 +95,9 @@
     <div class='placement__description'>
       <p>I worked on containerizing services used at Bloomberg, and making them easy to use for product teams.</p>
       <ul>
-        <li>Pipeline to build Docker containers from Debian packages when a new version is published</li>
-        <li>Built an API with Tornado to provide container metadata, and to run containers on the cloud</li>
-        <li>Integrated Kerberos into the API for authentication, allowing user-based resource (ie. CPU/Memory) quotas</li>
-        <li>Used Nomad to schedule containers onto a farm of machines</li>
-        <li>Wrote Python and C++ Clients for users to easily use the containers framework</li>
+        <li>Created a pipeline to build Docker images from packages when a new version is released</li>
+        <li>Built a service to provide on-demand cloud-hosted containers with services like Kafka</li>
+        <li>Implemented user resource quotas (CPU, RAM), using Kerberos for authentication</li>
       </ul>
     </div>
   </div>
@@ -94,10 +111,9 @@
     <div class='placement__description'>
       <p>I worked mostly on chat-bots at Yahoo, specifically on routing (between bots and chat platforms).</p>
       <ul>
-        <li>Implemented DB caching using Memcached to improve read performance</li>
-        <li>Created a football minigame with Phaser.js for the Yahoo Bots app</li>
-        <li>Build phone number verification using Twilio SMS APIs</li>
-        <li>Integrated Twilio Programmable Chat to allow users to chat with our bots from the web</li>
+        <li>Added database caching using Memcached to improve read performance</li>
+        <li>Built phone number verification for user accounts over SMS </li>
+        <li>Developed functionality for customers to message chat-bots from a merchant’s website</li>
       </ul>
     </div>
   </div>
